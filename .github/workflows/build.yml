@@ -34,7 +34,8 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=jerehops_jhps-sqc-repo -Dsonar.organization=jerehops -Dsonar.projectVersion={{ github.run_number }}
+          GITHUB_RUN_NUMBER: ${{ github.run_number }}
+        run: mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=jerehops_jhps-sqc-repo -Dsonar.organization=jerehops -Dsonar.projectVersion=$GITHUB_RUN_NUMBER
       - name: Build and analyze
         if: ${{ github.event_name == 'pull_request' }}
         env:
