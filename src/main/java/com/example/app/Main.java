@@ -8,4 +8,10 @@ public class Main {
     public static String greet(String name) {
         return "Hello, " + name + "!";
     }
+    
+
+    public static String goodbye(String name) {
+        return "Goodbye, " + name + "!";
+    }
+
 }
