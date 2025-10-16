@@ -18,6 +18,6 @@ public class Main {
     }
 
     public static String somerandomfunction(String name) {
-        return "Is it only some random function?, " + name + "!";
+        return "random, " + name + "!";
     }
 }
