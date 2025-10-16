@@ -16,4 +16,10 @@ class MainTest {
     String result = Main.goodbye("Jeremy");
     assertEquals("Goodbye, Jeremy!", result);
   }
+
+  @Test
+  void testrandomfunction() {
+    String result = Main.somerandomfunction("Jeremy");
+    assertEquals("Is it only some random function?, Jeremy", result);
+  }
 }
