@@ -1,11 +1,16 @@
 package com.example.app;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World from Simple Java App!");
-    }
+import java.util.logging.Logger;
 
-    public static String greet(String name) {
-        return "Hello, " + name + "!";
-    }
+public class Main {
+
+  static Logger logger = Logger.getLogger(Main.class.getName());
+
+  public static void main(String[] args) {
+    logger.info("My Message");
+  }
+  
+  public static String greet(String name) {
+    return "Hello, " + name + "!";
+  }
 }
