@@ -18,6 +18,12 @@ class MainTest {
   }
 
   @Test
+  void testhelloworld() {
+    String result = Main.helloworld("Jeremy");
+    assertEquals("helloworld, Jeremy!", result);
+  }
+
+  @Test
   void testrandomfunction() {
     String result = Main.somerandomfunction("Jeremy");
     assertEquals("Is it only some random function?, Jeremy", result);
