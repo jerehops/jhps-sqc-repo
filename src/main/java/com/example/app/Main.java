@@ -9,9 +9,12 @@ public class Main {
         return "Hello, " + name + "!";
     }
     
-
     public static String goodbye(String name) {
         return "Goodbye, " + name + "!";
+    }
+
+    public static String helloworld(String name) {
+        return "helloworld, " + name + "!";
     }
 
     public static String somerandomfunction(String name) {
