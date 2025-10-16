@@ -40,4 +40,4 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=jerehops_jhps-sqc-repo -Dsonar.organization=jerehops
+        run: mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=jerehops_jhps-sqc-repo -Dsonar.organization=jerehops -Dsonar.projectVersion=$GITHUB_RUN_NUMBER

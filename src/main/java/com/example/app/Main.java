@@ -14,4 +14,7 @@ public class Main {
         return "Goodbye, " + name + "!";
     }
 
+    public static String somerandomfunction(String name) {
+        return "Is it only some random function?, " + name + "!";
+    }
 }
