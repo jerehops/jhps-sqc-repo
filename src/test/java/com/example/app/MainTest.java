@@ -1,12 +1,13 @@
 package com.example.app;
 
-public class MainTest {
-    public static void main(String[] args) {
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class MainTest {
+
+    @Test
+    void testGreet() {
         String result = Main.greet("Alice");
-        if ("Hello, Alice!".equals(result)) {
-            System.out.println("Test passed!");
-        } else {
-            System.out.println("Test failed: " + result);
-        }
+        assertEquals("Hello, Alice!", result);
     }
 }
