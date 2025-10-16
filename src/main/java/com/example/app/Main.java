@@ -13,7 +13,11 @@ public class Main {
         return "Goodbye, " + name + "!";
     }
 
-        public static String helloworld(String name) {
+    public static String helloworld(String name) {
         return "helloworld, " + name + "!";
+    }
+
+    public static String somerandomfunction(String name) {
+        return "random, " + name + "!";
     }
 }
