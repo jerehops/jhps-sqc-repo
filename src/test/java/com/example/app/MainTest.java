@@ -26,6 +26,6 @@ class MainTest {
   @Test
   void testrandomfunction() {
     String result = Main.somerandomfunction("Jeremy");
-    assertEquals("Is it only some random function?, Jeremy", result);
+    assertEquals("Is it only some random function?, Jeremy!", result);
   }
 }
